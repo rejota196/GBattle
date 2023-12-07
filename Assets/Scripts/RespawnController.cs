@@ -13,9 +13,9 @@ public class RespawnController : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.y < respawnHeight)
-        {
-            Respawn();
+        if(GameManager.Instance.GetCurrentState() == GameManager.GameState.Playing){
+            if (transform.position.y < respawnHeight)        
+                Respawn();        
         }
     }
 
