@@ -26,24 +26,26 @@ public class CharacterController : MonoBehaviour
 
     void Update()
     {
-        float horizontalMovement = Input.GetAxis("Horizontal");
+        if(GameManager.Instance.GetCurrentState() == GameManager.GameState.Playing){
+            float horizontalMovement = Input.GetAxis("Horizontal");
 
-        if (horizontalMovement < 0)
-            transform.eulerAngles = new Vector3(0,180,0);
-        else if (horizontalMovement > 0)
-            transform.eulerAngles = new Vector3(0,0,0);
+            if (horizontalMovement < 0)
+                transform.eulerAngles = new Vector3(0,180,0);
+            else if (horizontalMovement > 0)
+                transform.eulerAngles = new Vector3(0,0,0);
 
-        anim.SetFloat("speed", Mathf.Abs(horizontalMovement));
+            anim.SetFloat("speed", Mathf.Abs(horizontalMovement));
 
-        isGrounded = Physics2D.OverlapCircle(playerFeet.position, 0.2f, groundLayer);
+            isGrounded = Physics2D.OverlapCircle(playerFeet.position, 0.2f, groundLayer);
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        {
-            Jump();
+            if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+            {
+                Jump();
+            }
+
+            Vector2 movement = new Vector2(horizontalMovement * speed, rb.velocity.y);
+            rb.velocity = movement;
         }
-
-        Vector2 movement = new Vector2(horizontalMovement * speed, rb.velocity.y);
-        rb.velocity = movement;
     }
 
     void Jump()

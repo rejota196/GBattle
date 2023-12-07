@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: 7a4673afa9e33f148a662d43503f03f6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 400654861674018119
+    second: Diseno_sin_titulo_2_0
+  - first:
+      213: -7789371397788723101
+    second: Diseno_sin_titulo_2_1
+  - first:
+      213: 6454582786429739219
+    second: Diseno_sin_titulo_2_2
+  - first:
+      213: 960577811353223410
+    second: Diseno_sin_titulo_2_3
+  - first:
+      213: -6718980680074776278
+    second: Diseno_sin_titulo_2_4
+  - first:
+      213: -1921547603577334580
+    second: Diseno_sin_titulo_2_5
+  - first:
+      213: -4435398018945769046
+    second: Diseno_sin_titulo_2_6
+  - first:
+      213: -49368658571060340
+    second: Diseno_sin_titulo_2_7
+  - first:
+      213: -1652359077483627136
+    second: Diseno_sin_titulo_2_8
+  - first:
+      213: 8314437596965847688
+    second: Diseno_sin_titulo_2_9
+  - first:
+      213: -7965507117943841599
+    second: Diseno_sin_titulo_2_10
+  - first:
+      213: -3283001192768185688
+    second: Diseno_sin_titulo_2_11
+  - first:
+      213: 501591436224864996
+    second: Diseno_sin_titulo_2_12
+  - first:
+      213: -4654498019561887626
+    second: Diseno_sin_titulo_2_13
+  - first:
+      213: 5499143006433356596
+    second: Diseno_sin_titulo_2_14
+  - first:
+      213: 2013008983026856489
+    second: Diseno_sin_titulo_2_15
+  - first:
+      213: 1621294976862539896
+    second: Diseno_sin_titulo_2_16
+  - first:
+      213: 92606289080440056
+    second: Diseno_sin_titulo_2_17
+  - first:
+      213: 9120737325073029652
+    second: Diseno_sin_titulo_2_18
+  - first:
+      213: 5636892741250727461
+    second: Diseno_sin_titulo_2_19
+  - first:
+      213: -7678027335095344043
+    second: Diseno_sin_titulo_2_20
+  - first:
+      213: -3081059709293375864
+    second: Diseno_sin_titulo_2_21
+  - first:
+      213: 1607587447046906376
+    second: Diseno_sin_titulo_2_22
+  - first:
+      213: 3945725782704005448
+    second: Diseno_sin_titulo_2_23
+  - first:
+      213: -8193746014481517571
+    second: Diseno_sin_titulo_2_24
+  - first:
+      213: 7621082733585994563
+    second: Diseno_sin_titulo_2_25
+  - first:
+      213: 3056401727585840676
+    second: Diseno_sin_titulo_2_26
+  - first:
+      213: -3471061685932295823
+    second: Diseno_sin_titulo_2_27
+  - first:
+      213: -8517800545514603528
+    second: Diseno_sin_titulo_2_28
+  - first:
+      213: 5386536108760364486
+    second: Diseno_sin_titulo_2_29
+  - first:
+      213: 5459878425326566340
+    second: Diseno_sin_titulo_2_30
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_0
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 893
+        width: 182
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745fc9359796f8500800000000000000
+      internalID: 400654861674018119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_1
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 893
+        width: 182
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368173bcbf796e390800000000000000
+      internalID: -7789371397788723101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_2
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 891
+        width: 212
+        height: 189
+      alignment: 9
+      pivot: {x: 0.12529826, y: 0.48211476}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0ee7ea8d8439950800000000000000
+      internalID: 6454582786429739219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_3
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 893
+        width: 217
+        height: 187
+      alignment: 9
+      pivot: {x: 0.10277758, y: 0.5090378}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0c4d81e68a45d00800000000000000
+      internalID: 960577811353223410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_4
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 594
+        width: 104
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a213e6f8ba261c2a0800000000000000
+      internalID: -6718980680074776278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_5
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 594
+        width: 103
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc415c5a2aa4555e0800000000000000
+      internalID: -1921547603577334580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_6
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 594
+        width: 102
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa12443600d4272c0800000000000000
+      internalID: -4435398018945769046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_7
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 594
+        width: 104
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b95d2777b905ff0800000000000000
+      internalID: -49368658571060340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_8
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 594
+        width: 103
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d32317c24a119e0800000000000000
+      internalID: -1652359077483627136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_9
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 594
+        width: 104
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8824d4251f0d26370800000000000000
+      internalID: 8314437596965847688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_10
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 717
+        width: 222
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc9c13ba75d47190800000000000000
+      internalID: -7965507117943841599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_11
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 717
+        width: 219
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa5edb2fcf6072d0800000000000000
+      internalID: -3283001192768185688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_12
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 389
+        width: 122
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2af82f0c206f600800000000000000
+      internalID: 501591436224864996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_13
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 390
+        width: 114
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678214836b6e76fb0800000000000000
+      internalID: -4654498019561887626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_14
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 392
+        width: 116
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ba88bbd61e05c40800000000000000
+      internalID: 5499143006433356596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_15
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 389
+        width: 112
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9227cf23105afeb10800000000000000
+      internalID: 2013008983026856489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_16
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 389
+        width: 113
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8705404013fff7610800000000000000
+      internalID: 1621294976862539896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_17
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 389
+        width: 118
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f45b94ede0094100800000000000000
+      internalID: 92606289080440056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_18
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 522
+        width: 129
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41adf9ef54e539e70800000000000000
+      internalID: 9120737325073029652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_19
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 522
+        width: 138
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e3a3725144a3e40800000000000000
+      internalID: 5636892741250727461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_20
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 522
+        width: 125
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55427e391da227590800000000000000
+      internalID: -7678027335095344043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_21
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 191
+        width: 172
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ecccfb480ed35d0800000000000000
+      internalID: -3081059709293375864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_22
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 191
+        width: 175
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802ab96044c4f4610800000000000000
+      internalID: 1607587447046906376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_23
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 190
+        width: 227
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8412c2ba1b802c630800000000000000
+      internalID: 3945725782704005448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_24
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 191
+        width: 226
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df37e038967f94e80800000000000000
+      internalID: -8193746014481517571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_25
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 321
+        width: 134
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34391433e5683c960800000000000000
+      internalID: 7621082733585994563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_26
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 16
+        width: 222
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ee4af7d258a6a20800000000000000
+      internalID: 3056401727585840676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_27
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 16
+        width: 219
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179798089cf44dfc0800000000000000
+      internalID: -3471061685932295823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_28
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 124
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb39f87881bac980800000000000000
+      internalID: -8517800545514603528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_29
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 124
+        width: 172
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5f9744d02d0ca40800000000000000
+      internalID: 5386536108760364486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diseno_sin_titulo_2_30
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 126
+        width: 173
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cbb86a008265cb40800000000000000
+      internalID: 5459878425326566340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 250182300c70ad649a339fc48f145863
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
