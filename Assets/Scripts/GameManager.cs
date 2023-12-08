@@ -8,17 +8,19 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     private int roundNumber;
+    private int levelNumber;
 
     public enum GameState
     {
         Menu,
+        Card,
         Playing,
         Paused,
         GameOver
     }
 
     [SerializeField]
-    private GameState currentState = GameState.Menu;
+    private GameState currentState;
 
     private void Awake()
     {
@@ -33,10 +35,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        ChangeState(GameState.Playing);
-    }
+    
 
     public void ChangeState(GameState newState)
     {
@@ -63,6 +62,14 @@ public class GameManager : MonoBehaviour
 
     public int GetRoundNumber(){
         return roundNumber;
+    }
+
+    public void IncreaseLevelNumber(){
+        levelNumber++;
+    }
+
+    public int GetLevelNumber(){
+        return levelNumber;
     }
 
 
