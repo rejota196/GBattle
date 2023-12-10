@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CreditsScene.unity
     guid: 844585a25461ec046a31052eb4555693
+  - enabled: 1
+    path: Assets/Scenes/TryAgainScene.unity
+    guid: 9ad2b9422d6ac5c46a9f76e2fe5cc4f6
+  - enabled: 1
+    path: Assets/Scenes/FinalScene.unity
+    guid: 91b61ba8fe780dc4fbf073448ea0a0d2
   m_configObjects: {}

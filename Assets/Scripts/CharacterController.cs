@@ -12,13 +12,15 @@ public class CharacterController : MonoBehaviour
 
     private bool isGrounded;
     private Rigidbody2D rb;
-    private Animator anim;    
+    private Animator anim;
+
+    private AudioController audio;    
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        
+        audio = GetComponent<AudioController>();
         rb.gravityScale*= gravityMultiplier;
     }
 
@@ -40,6 +42,7 @@ public class CharacterController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
             {
+                audio.Jump();
                 Jump();
             }
 

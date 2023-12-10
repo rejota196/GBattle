@@ -17,12 +17,16 @@ public class RoundController : MonoBehaviour
 
     private GameManager gm;
     
+    private bool player1Win;
+    private bool player2Win;
 
     void Start(){
         gm = GameManager.Instance;
         EnemyInRoundControl();
         RoundControl(gm.GetRoundNumber());
         theresAWinner = false;
+        player1Win = false;
+        player2Win = false;
     }
 
     private void EnemyInRoundControl(){
@@ -70,30 +74,51 @@ public class RoundController : MonoBehaviour
     }
 
     IEnumerator LoadRound(){
-        if(player1H.GetCurrentHealth()>player2H.GetCurrentHealth())
-            RoundControl(3);       
-        
-        else 
-            RoundControl(4);            
+        if(player1H.GetCurrentHealth()>player2H.GetCurrentHealth()){
+            RoundControl(3);
+            player1Win = true;
+        }
+        else{ 
+            RoundControl(4);          
+            player2Win = true;
+        }
         
         yield return new WaitForSeconds(3);
+        if(player1Win)
+            gm.IncreaseRoundWonPlayer1();
+        else
+            gm.IncreaseRoundWonPlayer2();        
+
         if(gm.GetRoundNumber() < 1 || (gm.GetRoundWonPlayer1()==1 && gm.GetRoundWonPlayer2()==1)){
             gm.IncreaseNumberOfRounds();
             SceneManager.LoadScene(3);
-
         }
         else{
-            gm.IncreaseLevelNumber();
-            gm.ResetRoundNumber();
-            gm.resetRoundWonPlayer1();
-            gm.resetRoundWonPlayer2();
-            SceneManager.LoadScene(1);
+            if(gm.GetRoundWonPlayer1()>1){
+                if (gm.GetLevelNumber()>2)
+                    SceneManager.LoadScene(7);
+                else{
+                    gm.ResetRoundNumber();
+                    gm.resetRoundWonPlayer1();
+                    gm.resetRoundWonPlayer2();            
+                    gm.IncreaseLevelNumber();            
+                    SceneManager.LoadScene(1);
+                } 
+            }
+            else{
+                gm.ResetRoundNumber();
+                gm.resetRoundWonPlayer1();
+                gm.resetRoundWonPlayer2();
+                SceneManager.LoadScene(6);
+            }
+            
         }
 
     }
     private void LifeControl(){
         if (player1H.GetCurrentHealth() == 0 || player2H.GetCurrentHealth() == 0){
-            theresAWinner = true; 
+            theresAWinner = true;
+             
         }    
     }
 

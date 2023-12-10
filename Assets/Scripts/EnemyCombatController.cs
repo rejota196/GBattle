@@ -12,8 +12,11 @@ public class EnemyCombatController : MonoBehaviour
     private float timeToAttack;
     private float currentTime;
 
+    private AudioController audio;
+
     void Start(){
         power = GetComponent<PowerController>();
+        audio = GetComponent<AudioController>();
     }    
 
     public void Attack(float timeToAttack)
@@ -22,6 +25,7 @@ public class EnemyCombatController : MonoBehaviour
             currentTime+=Time.deltaTime;
         else{
             currentTime = 0;
+            audio.Attack();
             power.UsePower1();
             RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 1f, enemyLayer);
 

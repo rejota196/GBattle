@@ -8,16 +8,20 @@ public class CombatController : MonoBehaviour
     public float knockbackForce = 5f;
     public LayerMask enemyLayer;
 
+
     private PowerController power;
 
+    private AudioController audio;
     void Start(){
         power = GetComponent<PowerController>();
+        audio = GetComponent<AudioController>();
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.J))
         {
+            audio.Attack();
             power.UsePower1();
             Attack();
         }

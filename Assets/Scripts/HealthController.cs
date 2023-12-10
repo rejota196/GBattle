@@ -14,10 +14,13 @@ public class HealthController : MonoBehaviour
 
     private Animator anim;
 
+    private AudioController audio;
+
     private void Start()
     {
         currentHealth = maxHealth;
         anim = GetComponent<Animator>();
+        audio = GetComponent<AudioController>();
     }
 
     public void TakeDamage(float amount)
@@ -28,8 +31,10 @@ public class HealthController : MonoBehaviour
             
             if (currentHealth>=0){
                 UpdateLifeBar();
-                if(currentHealth==0)
+                if(currentHealth==0){
                     Die();
+                    audio.Die();
+                }
             }
         }
     }

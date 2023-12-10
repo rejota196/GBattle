@@ -21,12 +21,15 @@ public class EnemyController : MonoBehaviour
 
     private float timeToAttack;
 
+    private AudioController audio;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         enemyCombat = GetComponent<EnemyCombatController>();
         health = GetComponent<HealthController>();
+        audio = GetComponent<AudioController>();
         int levelNumber = GameManager.Instance.GetLevelNumber();
 
         switch(levelNumber){
@@ -61,6 +64,7 @@ public class EnemyController : MonoBehaviour
 
                 if (Time.time >= jumpCooldown && IsGrounded())
                 {
+                    audio.Jump();
                     Jump();
                 }
             }
