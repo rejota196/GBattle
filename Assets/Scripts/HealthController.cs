@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,16 +22,16 @@ public class HealthController : MonoBehaviour
 
     public void TakeDamage(float amount)
     {
-        currentHealth -= amount;
-        anim.SetTrigger("damage");
-        
-        if (currentHealth>=0){
-            UpdateLifeBar();
-            if(currentHealth==0)
-                Die();
-        }        
+        if(!GetIsDead()){
+            currentHealth -= amount;
+            anim.SetTrigger("damage");
             
-            
+            if (currentHealth>=0){
+                UpdateLifeBar();
+                if(currentHealth==0)
+                    Die();
+            }
+        }
     }
 
     private void UpdateLifeBar(){
@@ -39,10 +40,14 @@ public class HealthController : MonoBehaviour
 
     private void Die()
     {
-        anim.SetBool("die", true);
+        anim.SetTrigger("die");
     }
 
     public float GetCurrentHealth(){
         return currentHealth;
+    }
+
+    public bool GetIsDead(){
+        return currentHealth<=0? true:false;
     }
 }

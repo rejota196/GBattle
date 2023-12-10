@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CombatController : MonoBehaviour
 {
-    public float damageAmount = 10f;
+    public float damageAmount = 5f;
     public float knockbackForce = 5f;
     public LayerMask enemyLayer;
 
@@ -40,28 +40,12 @@ public class CombatController : MonoBehaviour
                 if (enemyRigidbody != null)
                 {
                     Vector2 knockbackDirection = transform.right;
-                    SetXConstraints(enemyRigidbody, false);
                     enemyRigidbody.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
-                    StartCoroutine(ActivateXConstraints(enemyRigidbody));
+                    
                 }
             }
         }
     }
 
-    IEnumerator ActivateXConstraints(Rigidbody2D rb){
-        yield return new WaitForSeconds(0.3f);
-        SetXConstraints(rb, true);
-    }
-
-    void SetXConstraints(Rigidbody2D rb, bool isConstrained)
-    {
-        if (isConstrained)
-        {
-            rb.constraints |= RigidbodyConstraints2D.FreezePositionX;
-        }
-        else
-        {
-            rb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
-        }
-    }
+    
 }

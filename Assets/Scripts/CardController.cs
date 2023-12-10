@@ -5,8 +5,29 @@ using UnityEngine.SceneManagement;
 
 public class CardController : MonoBehaviour
 {
-    public float waitTime;
+    private float waitTime;
+    private Animator anim;
+
     void Start(){
+        int gameLevel = GameManager.Instance.GetLevelNumber();
+        anim = GetComponent<Animator>();
+        switch(gameLevel){
+            case 1:
+                anim.SetFloat("level", 0);
+                waitTime = 1;
+                /* waitTime = 1; */
+                break;
+            case 2:
+                anim.SetFloat("level", 0.5f);
+                waitTime = 83.1f;
+                /* waitTime = 1; */
+                break;
+            case 3:
+                anim.SetFloat("level", 1);
+                waitTime = 63;
+                /* waitTime = 1; */
+                break;
+        }
         StartCoroutine(WaitForCard());
     }
 

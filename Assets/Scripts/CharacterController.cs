@@ -12,7 +12,7 @@ public class CharacterController : MonoBehaviour
 
     private bool isGrounded;
     private Rigidbody2D rb;
-    private Animator anim;
+    private Animator anim;    
 
     void Start()
     {

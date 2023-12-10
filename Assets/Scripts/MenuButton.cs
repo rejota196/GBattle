@@ -16,9 +16,11 @@ public class MenuButton : MonoBehaviour
                 break;
             case 2:
                 Debug.Log("1 vs 1");
+                SceneManager.LoadScene(4);
                 break;
             case 3:
                 Debug.Log("Credits");
+                SceneManager.LoadScene(5);
                 break;
         }
     }

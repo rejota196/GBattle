@@ -1,0 +1,400 @@
+fileFormatVersion: 2
+guid: e288be26295df8f4dbbcc2b38460a592
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5558944504975987636
+    second: John Whitelocke 2_0
+  - first:
+      213: -6684874793679165655
+    second: John Whitelocke 2_1
+  - first:
+      213: 4361954495241882628
+    second: John Whitelocke 2_2
+  - first:
+      213: -945836380528557989
+    second: John Whitelocke 2_3
+  - first:
+      213: -6506954888756009672
+    second: John Whitelocke 2_4
+  - first:
+      213: -7678693926388325808
+    second: John Whitelocke 2_5
+  - first:
+      213: -7800181979076257947
+    second: John Whitelocke 2_6
+  - first:
+      213: 7706093982421190134
+    second: John Whitelocke 2_7
+  - first:
+      213: 7437803812695972600
+    second: John Whitelocke 2_8
+  - first:
+      213: -1404652841187839869
+    second: John Whitelocke 2_9
+  - first:
+      213: -381769917909531827
+    second: John Whitelocke 2_10
+  - first:
+      213: -4156003255572491802
+    second: John Whitelocke 2_11
+  - first:
+      213: 184399456721349195
+    second: John Whitelocke 2_12
+  - first:
+      213: 6419920542421268998
+    second: John Whitelocke 2_13
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 220
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: John Whitelocke 2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 733
+        width: 296
+        height: 326
+      alignment: 9
+      pivot: {x: 0.55808103, y: 0.32069725}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b314312396552d40800000000000000
+      internalID: 5558944504975987636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John Whitelocke 2_2
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 733
+        width: 251
+        height: 344
+      alignment: 9
+      pivot: {x: 0.47260252, y: 0.31508636}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c8f47b086c88c30800000000000000
+      internalID: 4361954495241882628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John Whitelocke 2_4
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 733
+        width: 267
+        height: 179
+      alignment: 9
+      pivot: {x: 0.42273247, y: 0.6440668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835e4360107a2b5a0800000000000000
+      internalID: -6506954888756009672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John Whitelocke 2_5
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 731
+        width: 331
+        height: 178
+      alignment: 9
+      pivot: {x: 0.34937555, y: 0.68350977}
+      border: {x: 0, y: 1, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052aca2be8ccf6590800000000000000
+      internalID: -7678693926388325808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John Whitelocke 2_6
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 799
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56791c131df20c390800000000000000
+      internalID: -7800181979076257947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John Whitelocke 2_7
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 534
+        width: 45
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f58dfbf5ab81fa60800000000000000
+      internalID: 7706093982421190134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John Whitelocke 2_8
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 385
+        width: 251
+        height: 284
+      alignment: 9
+      pivot: {x: 0.48630124, y: 0.48183945}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa1ac41923683760800000000000000
+      internalID: 7437803812695972600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John Whitelocke 2_9
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 386
+        width: 258
+        height: 285
+      alignment: 9
+      pivot: {x: 0.48667282, y: 0.46983877}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3807140eeaba18ce0800000000000000
+      internalID: -1404652841187839869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John Whitelocke 2_11
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 642
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e11c3afe09e256c0800000000000000
+      internalID: -4156003255572491802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John Whitelocke 2_12
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 385
+        width: 247
+        height: 262
+      alignment: 9
+      pivot: {x: 0.48607942, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4aa6a2345e1f8200800000000000000
+      internalID: 184399456721349195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John Whitelocke 2_13
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 387
+        width: 257
+        height: 263
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ab04918b3281950800000000000000
+      internalID: 6419920542421268998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

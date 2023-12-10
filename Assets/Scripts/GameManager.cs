@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     private int roundNumber;
+    private int roundWonPlayer1;
+    private int roundWonPlayer2;
     private int levelNumber;
 
     public enum GameState
@@ -16,7 +18,7 @@ public class GameManager : MonoBehaviour
         Card,
         Playing,
         Paused,
-        GameOver
+        Final
     }
 
     [SerializeField]
@@ -47,7 +49,7 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.Playing:
                 break;
-            case GameState.GameOver:
+            case GameState.Final:
                 break;
         }
     }
@@ -62,6 +64,30 @@ public class GameManager : MonoBehaviour
 
     public int GetRoundNumber(){
         return roundNumber;
+    }
+
+    public void ResetRoundNumber(){
+        roundNumber = 0;
+    }
+
+    public void IncreaseRoundWonPlayer1(){
+        roundWonPlayer1++;
+    }
+    public void IncreaseRoundWonPlayer2(){
+        roundWonPlayer2++;
+    }
+    public int GetRoundWonPlayer1(){
+        return roundWonPlayer1;
+    }
+    public int GetRoundWonPlayer2(){
+        return roundWonPlayer2;
+    }
+    public void resetRoundWonPlayer1(){
+        roundWonPlayer1 = 0;
+    }
+
+    public void resetRoundWonPlayer2(){
+        roundWonPlayer2 = 0;
     }
 
     public void IncreaseLevelNumber(){
