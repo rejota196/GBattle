@@ -97,6 +97,9 @@ public class GameManager : MonoBehaviour
     public int GetLevelNumber(){
         return levelNumber;
     }
+    public void ResetLevelNumber(){
+        levelNumber = 0; 
+    }
 
 
 }

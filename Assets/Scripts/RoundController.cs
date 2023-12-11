@@ -95,8 +95,13 @@ public class RoundController : MonoBehaviour
         }
         else{
             if(gm.GetRoundWonPlayer1()>1){
-                if (gm.GetLevelNumber()>2)
+                if (gm.GetLevelNumber()>2){
+                    gm.ResetRoundNumber();
+                    gm.resetRoundWonPlayer1();
+                    gm.resetRoundWonPlayer2();
+                    gm.ResetLevelNumber();
                     SceneManager.LoadScene(7);
+                }
                 else{
                     gm.ResetRoundNumber();
                     gm.resetRoundWonPlayer1();
