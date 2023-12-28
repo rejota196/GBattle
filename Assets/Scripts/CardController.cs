@@ -28,6 +28,15 @@ public class CardController : MonoBehaviour
         StartCoroutine(WaitForCard());
     }
 
+    void Update(){
+        if(Input.GetKeyDown(KeyCode.Space)){
+            int sceneNumber = SceneManager.GetActiveScene().buildIndex;
+            GameManager.Instance.ChangeState(GameManager.GameState.Playing);
+            SceneManager.LoadScene(sceneNumber+1);
+        }
+
+    }
+
     IEnumerator WaitForCard(){
         int sceneNumber = SceneManager.GetActiveScene().buildIndex;
         yield return new WaitForSeconds(waitTime);

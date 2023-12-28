@@ -284,7 +284,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 75d7c2a74b8243248b0df548f83922af, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ac029fae67df8bd49bbe9fdba2c5ebb2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2354,7 +2354,7 @@ MonoBehaviour:
   timeText: {fileID: 1986613367}
   panelImage: {fileID: 63430067}
   bgs:
-  - {fileID: 21300000, guid: 75d7c2a74b8243248b0df548f83922af, type: 3}
+  - {fileID: 21300000, guid: ac029fae67df8bd49bbe9fdba2c5ebb2, type: 3}
   - {fileID: 21300000, guid: 5c533849bb3e40448b1c0477b5024441, type: 3}
   - {fileID: 21300000, guid: e4da45093d5de7e4f9f53f19a778e6d7, type: 3}
   names:

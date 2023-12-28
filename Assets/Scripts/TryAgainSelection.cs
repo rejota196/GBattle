@@ -17,14 +17,5 @@ public class TryAgainSelection : MonoBehaviour,IPointerEnterHandler
             selector.position = s1.position;        
         else    
             selector.position = s2.position;
-    }
-
-    public void ClickBack(){
-        SceneManager.LoadScene(0);
-    }
-    public void ClickTryAgain(){
-        SceneManager.LoadScene(1);
-    }
-
-    
+    }    
 }
