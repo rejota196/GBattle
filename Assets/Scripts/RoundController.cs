@@ -16,7 +16,6 @@ public class RoundController : MonoBehaviour
     public GameObject[] enemies;
 
     private GameManager gm;
-    
     private bool player1Win;
     private bool player2Win;
 
@@ -67,7 +66,7 @@ public class RoundController : MonoBehaviour
     }
 
     void Update(){
-        if(hud.GetCurrentNumber() == 0 || theresAWinner)
+        if(theresAWinner)
             StartCoroutine(LoadRound());
         else
             LifeControl();
@@ -96,30 +95,31 @@ public class RoundController : MonoBehaviour
         else{
             if(gm.GetRoundWonPlayer1()>1){
                 if (gm.GetLevelNumber()>2){
-                    gm.ResetRoundNumber();
-                    gm.resetRoundWonPlayer1();
-                    gm.resetRoundWonPlayer2();
+                    ResetRoundValues();
                     gm.ResetLevelNumber();
                     SceneManager.LoadScene(7);
                 }
                 else{
-                    gm.ResetRoundNumber();
-                    gm.resetRoundWonPlayer1();
-                    gm.resetRoundWonPlayer2();            
+                    ResetRoundValues();            
                     gm.IncreaseLevelNumber();            
                     SceneManager.LoadScene(1);
                 } 
             }
             else{
-                gm.ResetRoundNumber();
-                gm.resetRoundWonPlayer1();
-                gm.resetRoundWonPlayer2();
+                ResetRoundValues();
                 SceneManager.LoadScene(6);
             }
             
         }
 
     }
+
+    private void ResetRoundValues(){
+        gm.ResetRoundNumber();
+        gm.resetRoundWonPlayer1();
+        gm.resetRoundWonPlayer2();
+    }
+    
     private void LifeControl(){
         if (player1H.GetCurrentHealth() == 0 || player2H.GetCurrentHealth() == 0){
             theresAWinner = true;
