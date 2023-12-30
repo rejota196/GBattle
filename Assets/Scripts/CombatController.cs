@@ -12,18 +12,24 @@ public class CombatController : MonoBehaviour
     private PowerController power;
 
     private AudioController audio;
+
+    private GameManager gm;
     void Start(){
+        gm = GameManager.Instance;
         power = GetComponent<PowerController>();
         audio = GetComponent<AudioController>();
+        
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            audio.Attack();
-            power.UsePower1();
-            Attack();
+        if(gm.GetCurrentState() == GameManager.GameState.Playing){
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+                audio.Attack();
+                power.UsePower1();
+                Attack();
+            }
         }
     }
 

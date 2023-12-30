@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MapAnimations : MonoBehaviour
 {
     void Start(){
-        SceneManager.LoadScene(2);
+        GameManager.Instance.ChangeState(GameManager.GameState.Card);
+        SceneManager.LoadScene("CardScene");
     }   
 }

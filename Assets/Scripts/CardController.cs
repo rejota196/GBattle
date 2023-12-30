@@ -8,8 +8,10 @@ public class CardController : MonoBehaviour
     private float waitTime;
     private Animator anim;
 
+    private GameManager gm;
     void Start(){
-        int gameLevel = GameManager.Instance.GetLevelNumber();
+        gm = GameManager.Instance;
+        int gameLevel = gm.GetLevelNumber();
         anim = GetComponent<Animator>();
         switch(gameLevel){
             case 1:
@@ -31,7 +33,7 @@ public class CardController : MonoBehaviour
     void Update(){
         if(Input.GetKeyDown(KeyCode.Space)){
             int sceneNumber = SceneManager.GetActiveScene().buildIndex;
-            GameManager.Instance.ChangeState(GameManager.GameState.Playing);
+            gm.ChangeState(GameManager.GameState.Playing);
             SceneManager.LoadScene(sceneNumber+1);
         }
 
@@ -40,7 +42,7 @@ public class CardController : MonoBehaviour
     IEnumerator WaitForCard(){
         int sceneNumber = SceneManager.GetActiveScene().buildIndex;
         yield return new WaitForSeconds(waitTime);
-        GameManager.Instance.ChangeState(GameManager.GameState.Playing);
+        gm.ChangeState(GameManager.GameState.Playing);
         SceneManager.LoadScene(sceneNumber+1);
     }
 }

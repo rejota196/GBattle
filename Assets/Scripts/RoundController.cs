@@ -90,31 +90,32 @@ public class RoundController : MonoBehaviour
 
         if(gm.GetRoundNumber() < 1 || (gm.GetRoundWonPlayer1()==1 && gm.GetRoundWonPlayer2()==1)){
             gm.IncreaseNumberOfRounds();
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene("GameScene");
         }
         else{
             if(gm.GetRoundWonPlayer1()>1){
                 if (gm.GetLevelNumber()>2){
                     ResetRoundValues();
                     gm.ResetLevelNumber();
-                    SceneManager.LoadScene(7);
+                    gm.ChangeState(GameManager.GameState.Final);
+                    SceneManager.LoadScene("FinalScene");
                 }
                 else{
                     ResetRoundValues();            
                     gm.IncreaseLevelNumber();            
-                    SceneManager.LoadScene(1);
+                    SceneManager.LoadScene("MapScene");
                 } 
             }
             else{
                 ResetRoundValues();
-                SceneManager.LoadScene(6);
+                SceneManager.LoadScene("TryAgainScene");
             }
             
         }
 
     }
 
-    private void ResetRoundValues(){
+    public void ResetRoundValues(){
         gm.ResetRoundNumber();
         gm.resetRoundWonPlayer1();
         gm.resetRoundWonPlayer2();

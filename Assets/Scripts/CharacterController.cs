@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
     public float speed = 5f;
-    public float jumpForce = 10f;
+    public float jumpForce = 13f;
     public float gravityMultiplier = 2.0f;
     public Transform playerFeet;
     public LayerMask groundLayer;
@@ -14,10 +14,13 @@ public class CharacterController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
 
-    private AudioController audio;    
+    private AudioController audio;
+
+    private GameManager gm;    
 
     void Start()
     {
+        gm = GameManager.Instance;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         audio = GetComponent<AudioController>();
@@ -28,7 +31,7 @@ public class CharacterController : MonoBehaviour
 
     void Update()
     {
-        if(GameManager.Instance.GetCurrentState() == GameManager.GameState.Playing){
+        if(gm.GetCurrentState() == GameManager.GameState.Playing){
             float horizontalMovement = Input.GetAxis("Horizontal");
 
             if (horizontalMovement < 0)

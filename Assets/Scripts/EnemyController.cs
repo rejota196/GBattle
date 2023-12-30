@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public float moveSpeed;
-    public float jumpForce = 11f;
+    public float jumpForce = 30f;
     public float jumpCooldown;
     public LayerMask groundLayer; 
 
@@ -23,8 +23,11 @@ public class EnemyController : MonoBehaviour
 
     private AudioController audio;
 
+    private GameManager gm;
+
     void Start()
     {
+        gm = GameManager.Instance;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         enemyCombat = GetComponent<EnemyCombatController>();
@@ -56,22 +59,24 @@ public class EnemyController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(!health.GetIsDead()){
-            posH = new Vector2(player.position.x, transform.position.y);
-            if (Vector2.Distance(posH, transform.position) > 1)
-            {
-                MoveTowardsPlayer();
-
-                if (Time.time >= jumpCooldown && IsGrounded())
+        if (gm.GetCurrentState() == GameManager.GameState.Playing){
+            if(!health.GetIsDead()){
+                posH = new Vector2(player.position.x, transform.position.y);
+                if (Vector2.Distance(posH, transform.position) > 1)
                 {
-                    audio.Jump();
-                    Jump();
+                    MoveTowardsPlayer();
+
+                    if (Time.time >= jumpCooldown && IsGrounded())
+                    {
+                        audio.Jump();
+                        Jump();
+                    }
                 }
-            }
-            else
-            {
-                anim.SetFloat("speed", 0);
-                enemyCombat.Attack(timeToAttack);
+                else
+                {
+                    anim.SetFloat("speed", 0);
+                    enemyCombat.Attack(timeToAttack);
+                }
             }
         }
     }

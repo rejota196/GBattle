@@ -4,6 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Button : MonoBehaviour
 {
+
+    private GameManager gm;
+    private RoundController rc;
+    private Tutorial tuto;    
+    void Start(){
+        gm = GameManager.Instance;
+    }
     public void QuitGame(){
         #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
@@ -13,35 +20,59 @@ public class Button : MonoBehaviour
     }
 
     public void ReturnToMainMenu(){
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("MenuScene");
+    }
+    public void ReturnToMainMenuInGame(){
+        rc = FindObjectOfType<RoundController>();
+        if (rc != null)
+            rc.ResetRoundValues();
+        Time.timeScale = 1;                
+        gm.ResetLevelNumber();
+        SceneManager.LoadScene("MenuScene");
     }
 
     public void ClickOnMenuOption(int buttonNumber){
         switch(buttonNumber){
             case 1:
                 Debug.Log("Load Story Mode");
-                GameManager.Instance.IncreaseLevelNumber();
-                SceneManager.LoadScene(GameManager.Instance.GetLevelNumber());
+                SceneManager.LoadScene("Tutorial");
                 break;
             case 2:
                 Debug.Log("1 vs 1");
-                SceneManager.LoadScene(4);
+                SceneManager.LoadScene("1v1Scene");
                 break;
             case 3:
                 Debug.Log("Credits");
-                SceneManager.LoadScene(5);
+                SceneManager.LoadScene("CreditsScene");
                 break;
         }
     }
 
     public void ClickTryAgain(){
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("MapScene");
     }
 
     public void SkipCardScene(){
         int sceneNumber = SceneManager.GetActiveScene().buildIndex;
-        GameManager.Instance.ChangeState(GameManager.GameState.Playing);
+        gm.ChangeState(GameManager.GameState.Playing);
         SceneManager.LoadScene(sceneNumber+1);
+    }
+
+    public void Volume(){
+        MenuPauseController pauseController = GameObject.FindObjectOfType<MenuPauseController>();
+        pauseController.ADVolumeControl();
+    }
+
+    public void TutorialBackButton(){
+        tuto = FindObjectOfType<Tutorial>();
+        if(tuto!= null)
+            tuto.TutorialBackButton();
+    }
+
+    public void TutorialContinueButton(){
+        tuto = FindObjectOfType<Tutorial>();
+        if(tuto!= null)
+            tuto.TutorialContinueButton();
     }
 
     

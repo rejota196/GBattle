@@ -14,6 +14,7 @@ public class EnemyCombatController : MonoBehaviour
 
     private AudioController audio;
 
+    
     void Start(){
         power = GetComponent<PowerController>();
         audio = GetComponent<AudioController>();

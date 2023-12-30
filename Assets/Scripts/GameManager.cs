@@ -41,17 +41,7 @@ public class GameManager : MonoBehaviour
 
     public void ChangeState(GameState newState)
     {
-        currentState = newState;
-
-        switch (currentState)
-        {
-            case GameState.Menu:
-                break;
-            case GameState.Playing:
-                break;
-            case GameState.Final:
-                break;
-        }
+        currentState = newState;       
     }
 
     public GameState GetCurrentState(){

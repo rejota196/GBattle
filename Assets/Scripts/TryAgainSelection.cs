@@ -17,5 +17,7 @@ public class TryAgainSelection : MonoBehaviour,IPointerEnterHandler
             selector.position = s1.position;        
         else    
             selector.position = s2.position;
-    }    
+    }
+
+        
 }
