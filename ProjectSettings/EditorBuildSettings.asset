@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinalScene.unity
     guid: 91b61ba8fe780dc4fbf073448ea0a0d2
+  - enabled: 1
+    path: Assets/Scenes/1vs1GameScene.unity
+    guid: ab19ecab6c2d30a48a5510652e898dea
   m_configObjects: {}

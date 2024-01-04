@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class RoundController : MonoBehaviour
 {
-    public HealthController player1H;
+    [SerializeField]
+    private HealthController player1H;
+    [SerializeField]
     private HealthController player2H;
 
     public HUDController hud;
@@ -21,11 +23,15 @@ public class RoundController : MonoBehaviour
 
     void Start(){
         gm = GameManager.Instance;
-        EnemyInRoundControl();
-        RoundControl(gm.GetRoundNumber());
         theresAWinner = false;
         player1Win = false;
         player2Win = false;
+        RoundControl(gm.GetRoundNumber());       
+        player1H = GameObject.Find("Player1").GetComponent<HealthController>();
+        if(gm.GetCurrentMode() == GameManager.GameMode.Vs)
+            player2H = GameObject.Find("Player2").GetComponent<HealthController>();            
+        else
+            EnemyInRoundControl();
     }
 
     private void EnemyInRoundControl(){
@@ -66,7 +72,7 @@ public class RoundController : MonoBehaviour
     }
 
     void Update(){
-        if(theresAWinner)
+        if(theresAWinner || hud.GetCurrentTime() == 0)
             StartCoroutine(LoadRound());
         else
             LifeControl();
@@ -88,29 +94,41 @@ public class RoundController : MonoBehaviour
         else
             gm.IncreaseRoundWonPlayer2();        
 
-        if(gm.GetRoundNumber() < 1 || (gm.GetRoundWonPlayer1()==1 && gm.GetRoundWonPlayer2()==1)){
-            gm.IncreaseNumberOfRounds();
-            SceneManager.LoadScene("GameScene");
-        }
-        else{
-            if(gm.GetRoundWonPlayer1()>1){
-                if (gm.GetLevelNumber()>2){
-                    ResetRoundValues();
-                    gm.ResetLevelNumber();
-                    gm.ChangeState(GameManager.GameState.Final);
-                    SceneManager.LoadScene("FinalScene");
+        if(gm.GetCurrentMode() == GameManager.GameMode.History){
+            if(gm.GetRoundNumber() < 1 || (gm.GetRoundWonPlayer1()==1 && gm.GetRoundWonPlayer2()==1)){
+                gm.IncreaseNumberOfRounds();
+                SceneManager.LoadScene("GameScene");
+            }
+            else{
+                if(gm.GetRoundWonPlayer1()>1){
+                    if (gm.GetLevelNumber()>2){
+                        ResetRoundValues();
+                        gm.ResetLevelNumber();
+                        gm.ChangeState(GameManager.GameState.Final);
+                        SceneManager.LoadScene("FinalScene");
+                    }
+                    else{
+                        ResetRoundValues();            
+                        gm.IncreaseLevelNumber();            
+                        SceneManager.LoadScene("MapScene");
+                    } 
                 }
                 else{
-                    ResetRoundValues();            
-                    gm.IncreaseLevelNumber();            
-                    SceneManager.LoadScene("MapScene");
-                } 
+                    ResetRoundValues();
+                    SceneManager.LoadScene("TryAgainScene");
+                }
+                
+            }
+        }
+        else{
+            if(gm.GetRoundNumber() < 1 || (gm.GetRoundWonPlayer1()==1 && gm.GetRoundWonPlayer2()==1)){
+                gm.IncreaseNumberOfRounds();
+                SceneManager.LoadScene("1vs1GameScene");
             }
             else{
                 ResetRoundValues();
-                SceneManager.LoadScene("TryAgainScene");
+                SceneManager.LoadScene("1v1Scene");
             }
-            
         }
 
     }
@@ -122,10 +140,8 @@ public class RoundController : MonoBehaviour
     }
     
     private void LifeControl(){
-        if (player1H.GetCurrentHealth() == 0 || player2H.GetCurrentHealth() == 0){
+        if (player1H.GetCurrentHealth() == 0 || player2H.GetCurrentHealth() == 0)
             theresAWinner = true;
-             
-        }    
     }
 
     private void SetPlayer2HealthController(GameObject player2){

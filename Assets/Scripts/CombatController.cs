@@ -14,6 +14,8 @@ public class CombatController : MonoBehaviour
     private AudioController audio;
 
     private GameManager gm;
+
+    public KeyCode attack;
     void Start(){
         gm = GameManager.Instance;
         power = GetComponent<PowerController>();
@@ -24,7 +26,7 @@ public class CombatController : MonoBehaviour
     private void Update()
     {
         if(gm.GetCurrentState() == GameManager.GameState.Playing){
-            if (Input.GetKeyDown(KeyCode.J))
+            if (Input.GetKeyDown(attack))
             {
                 audio.Attack();
                 power.UsePower1();
@@ -56,6 +58,14 @@ public class CombatController : MonoBehaviour
             }
         }
     }
+
+    public void SetEnemyLayer(LayerMask enemyLayer){
+        this.enemyLayer = enemyLayer;
+    }
+    public void SetAttackKey(KeyCode attack){
+        this.attack = attack;
+    }
+
 
     
 }

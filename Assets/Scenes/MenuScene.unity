@@ -418,6 +418,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b40045137b5d3b342b5fd242c43f239f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  players:
+  - {fileID: 8541977675320533331, guid: 7b1977ad82526f44e9bdd4bf35bec1cf, type: 3}
+  - {fileID: 1664688706496442597, guid: c37f3fc7565ea004a87b1159cddac5d3, type: 3}
+  - {fileID: 7117743911423742616, guid: 6a34f65cb8b0d4641be0f9145675c36c, type: 3}
+  - {fileID: 4040212528004180203, guid: 5effecd94c242814187b6edbcb935dfd, type: 3}
+  currentMode: 0
   currentState: 0
 --- !u!1 &830407166
 GameObject:

@@ -57,6 +57,10 @@ public class HUDController : MonoBehaviour
             timeText.text = currentNumber.ToString();
     }
 
+    public int GetCurrentTime(){
+        return currentNumber;
+    }
+
     
 
 

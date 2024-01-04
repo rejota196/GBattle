@@ -16,7 +16,16 @@ public class CharacterController : MonoBehaviour
 
     private AudioController audio;
 
-    private GameManager gm;    
+    private GameManager gm;
+    private CombatController cController;
+
+
+    public KeyCode left;
+    public KeyCode right;
+    public KeyCode jump;
+
+    private int playerNumber;
+    private float horizontalMovement;
 
     void Start()
     {
@@ -24,16 +33,23 @@ public class CharacterController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         audio = GetComponent<AudioController>();
-        rb.gravityScale*= gravityMultiplier;
+        rb.gravityScale*= gravityMultiplier;        
+        
     }
 
     
 
-    void Update()
+    void FixedUpdate()
     {
         if(gm.GetCurrentState() == GameManager.GameState.Playing){
-            float horizontalMovement = Input.GetAxis("Horizontal");
-
+            
+            if(Input.GetKey(left))
+                horizontalMovement = -1;
+            else if (Input.GetKey(right))
+                horizontalMovement = 1;
+            else    
+                horizontalMovement = 0;          
+            
             if (horizontalMovement < 0)
                 transform.eulerAngles = new Vector3(0,180,0);
             else if (horizontalMovement > 0)
@@ -42,8 +58,8 @@ public class CharacterController : MonoBehaviour
             anim.SetFloat("speed", Mathf.Abs(horizontalMovement));
 
             isGrounded = Physics2D.OverlapCircle(playerFeet.position, 0.2f, groundLayer);
-
-            if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+            
+            if (Input.GetKey(jump) && isGrounded)
             {
                 audio.Jump();
                 Jump();
@@ -51,11 +67,27 @@ public class CharacterController : MonoBehaviour
 
             Vector2 movement = new Vector2(horizontalMovement * speed, rb.velocity.y);
             rb.velocity = movement;
+            
         }
+        
     }
 
-    void Jump()
+    
+    private void Jump()
     {
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+    }
+    
+    public void SetControl1(){
+        left = KeyCode.A;
+        right = KeyCode.D;
+        jump = KeyCode.H;
+        GetComponent<CombatController>().SetAttackKey(KeyCode.G);
+    }
+    public void SetControl2(){
+        left = KeyCode.LeftArrow;
+        right = KeyCode.RightArrow;
+        jump = KeyCode.Keypad2;
+        GetComponent<CombatController>().SetAttackKey(KeyCode.Keypad1);
     }
 }

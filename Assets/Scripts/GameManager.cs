@@ -6,11 +6,20 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+    private int player1Number;
+    private int player2Number;
 
     private int roundNumber;
     private int roundWonPlayer1;
     private int roundWonPlayer2;
     private int levelNumber;
+
+    
+
+    public enum GameMode{
+        History,
+        Vs
+    }
 
     public enum GameState
     {
@@ -20,6 +29,9 @@ public class GameManager : MonoBehaviour
         Paused,
         Final
     }
+
+    [SerializeField]
+    private GameMode currentMode;
 
     [SerializeField]
     private GameState currentState;
@@ -44,8 +56,16 @@ public class GameManager : MonoBehaviour
         currentState = newState;       
     }
 
+    public void ChangeCurrentMode(GameMode newMode){
+        currentMode = newMode;
+    }
+
     public GameState GetCurrentState(){
         return currentState;
+    }
+
+    public GameMode GetCurrentMode(){
+        return currentMode;
     }
 
     public void IncreaseNumberOfRounds(){
@@ -91,5 +111,18 @@ public class GameManager : MonoBehaviour
         levelNumber = 0; 
     }
 
+    public void SetPlayer1Number(int playerNumber){
+        player1Number = playerNumber;
+    }
+    public void SetPlayer2Number(int playerNumber){
+        player2Number = playerNumber;
+    }
+
+    public int GetPlayer1Number(){
+        return player1Number;
+    }
+    public int GetPlayer2Number(){
+        return player2Number;
+    }
 
 }
