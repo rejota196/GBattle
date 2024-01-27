@@ -4,6 +4,7 @@ using System.Reflection;
 using System.Runtime.Serialization;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR;
 
 
 
@@ -18,6 +19,19 @@ public class HUDController : MonoBehaviour
     public GameObject[] names;
 
     public GameObject[] messages;
+    public GameObject trivia;
+    public QuestionDB question;
+    public Text triviaQuestion;
+    public Text triviaOption1;
+    public Text triviaOption2;
+    public Text triviaOption3;
+    public Text triviaOption4;
+    public Text triviaCorrectAnswer;
+    public Text triviaDescriptionResponse;
+    public Text truthValue;
+    private string[] currentQuestion;
+    
+    
     void Start(){
         switch(GameManager.Instance.GetLevelNumber()){
             case 1:
@@ -34,18 +48,42 @@ public class HUDController : MonoBehaviour
                 break;
 
         }
-        StartCoroutine(TimeControl());        
+
+        UpdateTrivia();
+        ActivateTrivia();
+        GameManager.Instance.ChangeState(GameManager.GameState.Paused);                
     }
 
-    
+    private void UpdateTrivia(){
+        int questionNumber = (int)(Random.Range(1,question.GetQuestionCount()+1));
+        Debug.Log(questionNumber);
+        currentQuestion = question.GetQuestionById(questionNumber);
+        triviaQuestion.text = currentQuestion[0];
+        triviaOption1.text = currentQuestion[1];
+        triviaOption2.text = currentQuestion[2];
+        triviaOption3.text = currentQuestion[3];
+        triviaOption4.text = currentQuestion[4];
+        triviaCorrectAnswer.text = currentQuestion[5];
+        triviaDescriptionResponse.text = currentQuestion[6];
+        
+    }
+    public void ActivateTrivia(){
+        trivia.SetActive(true);        
+    }
+    public void DeactivatedTrivia(){
+        trivia.SetActive(false);
+    }
 
     IEnumerator TimeControl(){
-        yield return new WaitForSeconds(1.5f);
-        while (GameManager.Instance.GetCurrentState() == GameManager.GameState.Playing){
+        while(GameManager.Instance.GetCurrentState()==GameManager.GameState.Playing){
             yield return new WaitForSeconds(timeBetweenNumbers);
             currentNumber-=1;
             UpdateGameTime();
         }
+               
+    }
+    public void StartFight(){
+        StartCoroutine(TimeControl());
     }
 
     public void UpdateGameTime(){
@@ -59,6 +97,9 @@ public class HUDController : MonoBehaviour
 
     public int GetCurrentTime(){
         return currentNumber;
+    }
+    public string[] GetCurrentQuestion(){
+        return currentQuestion;
     }
 
     

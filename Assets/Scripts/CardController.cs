@@ -33,7 +33,6 @@ public class CardController : MonoBehaviour
     void Update(){
         if(Input.GetKeyDown(KeyCode.Space)){
             int sceneNumber = SceneManager.GetActiveScene().buildIndex;
-            gm.ChangeState(GameManager.GameState.Playing);
             SceneManager.LoadScene(sceneNumber+1);
         }
 
@@ -42,7 +41,6 @@ public class CardController : MonoBehaviour
     IEnumerator WaitForCard(){
         int sceneNumber = SceneManager.GetActiveScene().buildIndex;
         yield return new WaitForSeconds(waitTime);
-        gm.ChangeState(GameManager.GameState.Playing);
         SceneManager.LoadScene(sceneNumber+1);
     }
 }

@@ -24,14 +24,14 @@ public class PlayerSelection : MonoBehaviour
         posSel1 = 1;
         posSel2 = 2;
         selector1.transform.position = pos[posSel1].position;
-        selector2.transform.position = pos[posSel2].position;        
+        selector2.transform.position = pos[posSel2].position; 
+               
         
     }
 
     void Update(){
 
         if(isPlayer1Selected && isPlayer2Selected){
-            gm.ChangeState(GameManager.GameState.Playing);
             gm.ChangeCurrentMode(GameManager.GameMode.Vs);
             SceneManager.LoadScene("1vs1GameScene");        
         }
