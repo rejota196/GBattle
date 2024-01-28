@@ -20,6 +20,8 @@ public class HUDController : MonoBehaviour
 
     public GameObject[] messages;
     public GameObject trivia;
+    public GameObject responsePanel;
+    public GameObject achievementPanel;
     public QuestionDB question;
     public Text triviaQuestion;
     public Text triviaOption1;

@@ -12,7 +12,7 @@ public class Button : MonoBehaviour
     private Tutorial tuto;
     private HUDController hud;
 
-    public GameObject responsePanel;
+    
         
     void Start(){
         gm = GameManager.Instance;
@@ -122,13 +122,18 @@ public class Button : MonoBehaviour
         if (currentAnswer.Contains(answerSelected)){
             hud.truthValue.text = "Correcto";
             hud.truthValue.color = new Color(0.0f, 1.0f, 0.0f);
+            hud.achievementPanel.SetActive(true);
+            GameObject.Find("CanvasTrivia").GetComponent<Animator>().SetTrigger("showAchievement");
+            
+
         }
         else{
             hud.truthValue.text = "Incorrecto";
             hud.truthValue.color = new Color(1.0f,0.0f,0.0f);
         }
 
-        responsePanel.SetActive(true);        
+        hud.responsePanel.SetActive(true);
+                
     }
 
     public void DeactivatedTrivia(){
