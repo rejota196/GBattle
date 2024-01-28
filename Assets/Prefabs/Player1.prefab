@@ -17,9 +17,9 @@ GameObject:
   - component: {fileID: 8541977675320533339}
   - component: {fileID: 8541977675320533341}
   - component: {fileID: 8541977675320533338}
-  - component: {fileID: 8541977676512412197}
   - component: {fileID: 8541977676512412196}
   - component: {fileID: 8541977676512412195}
+  - component: {fileID: 7653508632298563078}
   m_Layer: 9
   m_Name: Player1
   m_TagString: Untagged
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4040410329623888875, guid: b7d37a8d9aa5c4b4d91ed27e3c15ce57,
+  m_Sprite: {fileID: 6340754518721847244, guid: 206df74b37c11b443b2771d28229ce60,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -131,6 +131,9 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  left: 0
+  right: 0
+  jump: 0
 --- !u!50 &8541977675320533334
 Rigidbody2D:
   serializedVersion: 4
@@ -194,6 +197,7 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 1024
+  attack: 0
 --- !u!114 &8541977675320533338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,22 +213,6 @@ MonoBehaviour:
   lifeBar: {fileID: 0}
   maxHealth: 100
   currentHealth: 0
---- !u!70 &8541977676512412197
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8541977675320533331}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.68666667, y: 1.16}
-  m_Direction: 0
 --- !u!82 &8541977676512412196
 AudioSource:
   m_ObjectHideFlags: 0
@@ -337,6 +325,22 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cb80983c272c5d94a871dced7a71a83b, type: 3}
   - {fileID: 8300000, guid: dc1fd5b2f32fa8c47b03363a8c2259a9, type: 3}
   - {fileID: 8300000, guid: 7962a9cb2ee63394b95458d3895982ed, type: 3}
+--- !u!70 &7653508632298563078
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8541977675320533331}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.06901562, y: 0.01320678}
+  m_Size: {x: 0.61973166, y: 1.3244845}
+  m_Direction: 0
 --- !u!1 &8541977675398218338
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +365,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8541977675398218338}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.014, y: -0.575, z: 0}
+  m_LocalPosition: {x: 0.15, y: -0.802, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8541977675320533332}
