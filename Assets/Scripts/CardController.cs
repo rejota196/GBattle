@@ -9,6 +9,8 @@ public class CardController : MonoBehaviour
     private Animator anim;
 
     private GameManager gm;
+    public AudioSource audio;
+    public AudioClip[] audioClips;
     void Start(){
         gm = GameManager.Instance;
         int gameLevel = gm.GetLevelNumber();
@@ -16,17 +18,21 @@ public class CardController : MonoBehaviour
         switch(gameLevel){
             case 1:
                 anim.SetFloat("level", 0);
-                waitTime = 58;
+                waitTime = 66;
+                audio.clip = audioClips[0];
                 break;
             case 2:
                 anim.SetFloat("level", 0.5f);
-                waitTime = 83.1f;
+                waitTime = 69f;
+                audio.clip = audioClips[1];
                 break;
             case 3:
                 anim.SetFloat("level", 1);
-                waitTime = 63;
+                audio.clip = audioClips[2];
+                waitTime = 52;
                 break;
         }
+        audio.Play();
         StartCoroutine(WaitForCard());
     }
 

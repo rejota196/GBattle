@@ -23,7 +23,7 @@ public class Bullet : MonoBehaviour
     void FixedUpdate(){
         if(direction!=null){
             if(lifeTime<2){
-                transform.Translate(transform.forward*speed*Time.deltaTime);
+                transform.Translate(direction*speed*Time.deltaTime);
                 lifeTime+= Time.deltaTime;        
             }
             else{
@@ -34,10 +34,15 @@ public class Bullet : MonoBehaviour
 
     public void SetDirection(Vector3 direction){
         this.direction = direction;
+        if (direction.x>0)
+            transform.localScale = new Vector3(0.4f,0.4f,0.4f);
+        else
+            transform.localScale = new Vector3(-0.4f,0.4f,0.4f);
     }
 
     void OnTriggerEnter2D(Collider2D other){
         if(other.name == "Player1"){
+            other.gameObject.GetComponent<HealthController>().TakeDamage(10);
             GameObject burst = Instantiate(burstGO, transform.position,Quaternion.identity);
             Destroy(gameObject);
             

@@ -4939,6 +4939,12 @@ PrefabInstance:
       propertyPath: lifeBar
       value: 
       objectReference: {fileID: 265313520}
+    - target: {fileID: 4040212528004180115, guid: 0a55beb21b54829479561e96383651f4,
+        type: 3}
+      propertyPath: bulletGO
+      value: 
+      objectReference: {fileID: 3955560872076792887, guid: 6b8cb6b339562f14ea65802635ee7a6e,
+        type: 3}
     - target: {fileID: 4040212528004180203, guid: 0a55beb21b54829479561e96383651f4,
         type: 3}
       propertyPath: m_Name
@@ -8147,6 +8153,12 @@ PrefabInstance:
       propertyPath: lifeBar
       value: 
       objectReference: {fileID: 1324495547}
+    - target: {fileID: 4040212528004180115, guid: 0a55beb21b54829479561e96383651f4,
+        type: 3}
+      propertyPath: bulletGO
+      value: 
+      objectReference: {fileID: 3955560872076792887, guid: 6b8cb6b339562f14ea65802635ee7a6e,
+        type: 3}
     - target: {fileID: 4040212528004180203, guid: 0a55beb21b54829479561e96383651f4,
         type: 3}
       propertyPath: m_Name

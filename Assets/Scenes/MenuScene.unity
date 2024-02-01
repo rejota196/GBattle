@@ -2543,6 +2543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentMode: 0
   currentState: 0
+  stage: 0
 --- !u!1 &546794283
 GameObject:
   m_ObjectHideFlags: 0

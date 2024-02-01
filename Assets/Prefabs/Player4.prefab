@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6559713257725530914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.032, y: -0.544, z: 0}
+  m_LocalPosition: {x: 0.053, y: -0.814, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7117743911423742621}
@@ -48,8 +48,8 @@ GameObject:
   - component: {fileID: 7117743911423742623}
   - component: {fileID: 7117743911423742622}
   - component: {fileID: 1002164547}
-  - component: {fileID: 1002164546}
   - component: {fileID: 1002164545}
+  - component: {fileID: 1002164546}
   m_Layer: 10
   m_Name: Player4
   m_TagString: Untagged
@@ -179,6 +179,7 @@ MonoBehaviour:
   moveSpeed: 2
   jumpForce: 30
   jumpCooldown: 2
+  feet: {fileID: 4805758585472083093}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -200,6 +201,8 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 512
+  bulletGO: {fileID: 3955560872076792887, guid: 6b8cb6b339562f14ea65802635ee7a6e,
+    type: 3}
 --- !u!114 &7117743911423742608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,6 +259,22 @@ CapsuleCollider2D:
   m_Offset: {x: -0.02512151, y: -0.06454003}
   m_Size: {x: 0.5368329, y: 1.4984653}
   m_Direction: 0
+--- !u!114 &1002164545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7117743911423742616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46d44a37a16861449d59c5b97db8cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: cb80983c272c5d94a871dced7a71a83b, type: 3}
+  - {fileID: 8300000, guid: dc1fd5b2f32fa8c47b03363a8c2259a9, type: 3}
+  - {fileID: 8300000, guid: 9689aeddf4365e54a9a6d47279db4fbe, type: 3}
 --- !u!82 &1002164546
 AudioSource:
   m_ObjectHideFlags: 0
@@ -352,22 +371,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1002164545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7117743911423742616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b46d44a37a16861449d59c5b97db8cd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clips:
-  - {fileID: 8300000, guid: cb80983c272c5d94a871dced7a71a83b, type: 3}
-  - {fileID: 8300000, guid: dc1fd5b2f32fa8c47b03363a8c2259a9, type: 3}
-  - {fileID: 8300000, guid: 9689aeddf4365e54a9a6d47279db4fbe, type: 3}
 --- !u!1 &9003693019767123576
 GameObject:
   m_ObjectHideFlags: 0

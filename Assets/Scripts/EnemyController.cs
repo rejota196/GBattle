@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
     public float moveSpeed;
     public float jumpForce = 30f;
     public float jumpCooldown;
+    public Transform feet;
     public LayerMask groundLayer; 
 
     public Transform player;
@@ -39,19 +40,19 @@ public class EnemyController : MonoBehaviour
 
         switch(levelNumber){
             case 1:
-                timeToAttack = 1f;
-                jumpCooldown = 3;
-                moveSpeed = 2f;
+                timeToAttack = Random.Range(1,2);
+                jumpCooldown = Random.Range(2,4);
+                moveSpeed = Random.Range(1,4);
                 break;
             case 2:
-                timeToAttack = 2f;
-                jumpCooldown = 1.5f;
-                moveSpeed = 2.5f;
+                timeToAttack = Random.Range(1,1.5f);
+                jumpCooldown = Random.Range(2,4);
+                moveSpeed = Random.Range(2,3);
                 break;
             case 3:
-                timeToAttack = 1f;
-                jumpCooldown = 1;
-                moveSpeed = 3f;
+                timeToAttack = Random.Range(0.5f,1);
+                jumpCooldown = Random.Range(2,4);
+                moveSpeed = Random.Range(3,5);
                 break;
         
         }
@@ -100,6 +101,12 @@ public class EnemyController : MonoBehaviour
                     case 3:
                     if(timeToFire<timeToAttack){
                         timeToFire+=Time.deltaTime;
+                        MoveTowardsPlayer();
+                        if (Time.time >= jumpCooldown && IsGrounded())
+                        {
+                            audio.Jump();
+                            Jump();
+                        }
                     }
                     else{
                         timeToFire = 0;
@@ -128,7 +135,7 @@ public class EnemyController : MonoBehaviour
 
     private bool IsGrounded()
 {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1f, groundLayer);
+        RaycastHit2D hit = Physics2D.Raycast(feet.position, Vector2.down, 2f, groundLayer);
         return hit.collider != null;
     }
 

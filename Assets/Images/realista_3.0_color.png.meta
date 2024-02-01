@@ -1,0 +1,679 @@
+fileFormatVersion: 2
+guid: 4317b84b5d21d9a40a052cb6daef08b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -621227182511468651
+    second: realista_3.0_color_0
+  - first:
+      213: 8660687517185930134
+    second: realista_3.0_color_1
+  - first:
+      213: 6961199878614562763
+    second: realista_3.0_color_2
+  - first:
+      213: -6302659973847626788
+    second: realista_3.0_color_3
+  - first:
+      213: 6562860636826935045
+    second: realista_3.0_color_4
+  - first:
+      213: -5584130273291655026
+    second: realista_3.0_color_5
+  - first:
+      213: 5404060931054853866
+    second: realista_3.0_color_6
+  - first:
+      213: 7120742175517577021
+    second: realista_3.0_color_7
+  - first:
+      213: 991116495988115512
+    second: realista_3.0_color_8
+  - first:
+      213: 379593035735325825
+    second: realista_3.0_color_9
+  - first:
+      213: 8485449707617579510
+    second: realista_3.0_color_10
+  - first:
+      213: -7735024258048099196
+    second: realista_3.0_color_11
+  - first:
+      213: 1966520505297288785
+    second: realista_3.0_color_12
+  - first:
+      213: -7042812864977850918
+    second: realista_3.0_color_13
+  - first:
+      213: 3444713902343467874
+    second: realista_3.0_color_14
+  - first:
+      213: -6862398698736584638
+    second: realista_3.0_color_15
+  - first:
+      213: -4650004202956722534
+    second: realista_3.0_color_16
+  - first:
+      213: -5574496512102494346
+    second: realista_3.0_color_17
+  - first:
+      213: 4517799105129210880
+    second: realista_3.0_color_18
+  - first:
+      213: -6448484186257334751
+    second: realista_3.0_color_19
+  - first:
+      213: -2815149991510844125
+    second: realista_3.0_color_20
+  - first:
+      213: -8651496271438900274
+    second: realista_3.0_color_21
+  - first:
+      213: -2173169603851719342
+    second: realista_3.0_color_22
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: realista_3.0_color_0
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 816
+        width: 96
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f469d3b25f067f0800000000000000
+      internalID: -621227182511468651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_1
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 816
+        width: 97
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693f68c1961f03870800000000000000
+      internalID: 8660687517185930134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_2
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 815
+        width: 99
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7305758662b9060800000000000000
+      internalID: 6961199878614562763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_3
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 815
+        width: 98
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb4dbe85247888a0800000000000000
+      internalID: -6302659973847626788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_4
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 815
+        width: 100
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f96784af6f31b50800000000000000
+      internalID: 6562860636826935045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_5
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 815
+        width: 105
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8822f83a1f2182b0800000000000000
+      internalID: -5584130273291655026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_6
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 779
+        width: 136
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee571ce8c41ffa40800000000000000
+      internalID: 5404060931054853866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_7
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 773
+        width: 131
+        height: 183
+      alignment: 9
+      pivot: {x: 0.2381452, y: 0.5149963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f0ed40845f1d260800000000000000
+      internalID: 7120742175517577021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_8
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 777
+        width: 143
+        height: 184
+      alignment: 9
+      pivot: {x: 0.23133434, y: 0.52982897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838c662b33721cd00800000000000000
+      internalID: 991116495988115512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_9
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 779
+        width: 158
+        height: 182
+      alignment: 9
+      pivot: {x: 0.2568406, y: 0.5075395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c5736dad5944500800000000000000
+      internalID: 379593035735325825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_10
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 610
+        width: 104
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1fcfd1d8f52c570800000000000000
+      internalID: 8485449707617579510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_11
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 609
+        width: 101
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c73025b6ca7a490800000000000000
+      internalID: -7735024258048099196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_12
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 613
+        width: 101
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e34c10bfb7a4b10800000000000000
+      internalID: 1966520505297288785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_13
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 610
+        width: 102
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adda1738307e24e90800000000000000
+      internalID: -7042812864977850918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_14
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 610
+        width: 101
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26338061b051ecf20800000000000000
+      internalID: 3444713902343467874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_15
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 610
+        width: 101
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248f3b6fdbcd3c0a0800000000000000
+      internalID: -6862398698736584638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_16
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 556
+        width: 175
+        height: 184
+      alignment: 9
+      pivot: {x: 0.17853236, y: 0.51491445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ee0be60ddd77fb0800000000000000
+      internalID: -4650004202956722534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_17
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 558
+        width: 158
+        height: 182
+      alignment: 9
+      pivot: {x: 0.24815582, y: 0.50000036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f0a7a05f863a2b0800000000000000
+      internalID: -5574496512102494346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_18
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 573
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004edcb895272be30800000000000000
+      internalID: 4517799105129210880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_19
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 571
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e58625cc16286a0800000000000000
+      internalID: -6448484186257334751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_20
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 325
+        width: 142
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d5d8e7ff39ee8d0800000000000000
+      internalID: -2815149991510844125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_21
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 325
+        width: 142
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3944d8af5bfe780800000000000000
+      internalID: -8651496271438900274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realista_3.0_color_22
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 325
+        width: 153
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25dedbd52c957d1e0800000000000000
+      internalID: -2173169603851719342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

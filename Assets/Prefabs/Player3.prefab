@@ -148,6 +148,7 @@ MonoBehaviour:
   moveSpeed: 2
   jumpForce: 30
   jumpCooldown: 2
+  feet: {fileID: 7325999215692756737}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -169,6 +170,7 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 512
+  bulletGO: {fileID: 0}
 --- !u!114 &1664688706496442605
 MonoBehaviour:
   m_ObjectHideFlags: 0

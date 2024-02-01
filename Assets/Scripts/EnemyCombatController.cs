@@ -73,7 +73,8 @@ public class EnemyCombatController : MonoBehaviour
     }
 
     private void AttackL2L3(){
-        GameObject bullet = Instantiate(bulletGO, transform.Find("Fire").position, transform.localRotation);
+        GameObject bullet = Instantiate(bulletGO, transform.Find("Fire").position, Quaternion.identity);
+        bullet.GetComponent<Bullet>().SetDirection(transform.TransformDirection(Vector3.right));
         
     }
 }

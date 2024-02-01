@@ -640,6 +640,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c37178dfcf2e8d4180a9b9d737cecd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audio: {fileID: 1941482249}
+  audioClips:
+  - {fileID: 8300000, guid: c4a03d1e9ada77c4eaab8bf34c700a4a, type: 3}
+  - {fileID: 8300000, guid: 468e4f2431334bb4eaa873af767e59db, type: 3}
+  - {fileID: 8300000, guid: bef5c7d6fe3ca244b8f96e43ca548c65, type: 3}
 --- !u!95 &1745866025
 Animator:
   serializedVersion: 3
@@ -845,11 +850,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5de8fd426b5b4d84ab1ae5a6a8e896fd, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
