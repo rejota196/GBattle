@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameState currentState;
 
+    public int stage;
     private void Awake()
     {
         if (Instance == null)

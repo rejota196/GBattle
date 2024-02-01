@@ -107,15 +107,24 @@ public class Button : MonoBehaviour
     public void CloseAchievementsPanel(GameObject achievementsMenu){
         achievementsMenu.SetActive(false);
     }
-    public void ShowAchievement(GameObject achievement){
-        Debug.Log("Open Achievement");
-        achievement.SetActive(true);
+    public void ShowAchievement(GameObject achievementPanel){
+        Achievement achievement = GetComponent<Achievement>();
+        Image achievementPanelImage = achievementPanel.GetComponent<Image>();
+        if(achievement.GetIsActive()){
+            Debug.Log("Open Achievement");
+            achievement.SetAchievementPanelImage(achievementPanelImage);
+            achievementPanel.SetActive(true);            
+        }
+        else
+            Debug.Log("the button has not been activated");       
+        
     }
     public void ShowAchievementsMenu(GameObject achievement){
         achievement.SetActive(false);
     }
 
     public void ClickOnTriviaOption(){
+        AchievementDB achievementDB = FindObjectOfType<AchievementDB>();
         hud = FindObjectOfType<HUDController>();
         string answerSelected = GetComponent<Text>().text;
         string currentAnswer = hud.GetCurrentQuestion()[5];
@@ -123,9 +132,8 @@ public class Button : MonoBehaviour
             hud.truthValue.text = "Correcto";
             hud.truthValue.color = new Color(0.0f, 1.0f, 0.0f);
             hud.achievementPanel.SetActive(true);
-            GameObject.Find("CanvasTrivia").GetComponent<Animator>().SetTrigger("showAchievement");
-            
-
+            GameObject.Find("CanvasTrivia").GetComponent<Animator>().SetTrigger("showAchievement");          
+            achievementDB.SetAchievementPosition();
         }
         else{
             hud.truthValue.text = "Incorrecto";
@@ -143,6 +151,13 @@ public class Button : MonoBehaviour
         hud.DeactivatedTrivia();
 
         
+    }
+
+    public void ClickOnBack(Credits credits){
+        credits.ClickOnBack();
+    }
+    public void ClickOnMore(Credits credits){
+        credits.ClickOnMore();
     }
 
     

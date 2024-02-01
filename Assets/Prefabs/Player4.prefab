@@ -69,6 +69,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4805758585472083093}
+  - {fileID: 7128923769491077070}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -111,7 +112,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7903925987322787184, guid: b099042e65879d54b841da515b765b15,
+  m_Sprite: {fileID: 5058192373670703960, guid: dd729f673e0c32446b8c8f3ed749410e,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -252,8 +253,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0896616, y: 0}
-  m_Size: {x: 0.64346457, y: 1.1}
+  m_Offset: {x: -0.02512151, y: -0.06454003}
+  m_Size: {x: 0.5368329, y: 1.4984653}
   m_Direction: 0
 --- !u!82 &1002164546
 AudioSource:
@@ -367,3 +368,33 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cb80983c272c5d94a871dced7a71a83b, type: 3}
   - {fileID: 8300000, guid: dc1fd5b2f32fa8c47b03363a8c2259a9, type: 3}
   - {fileID: 8300000, guid: 9689aeddf4365e54a9a6d47279db4fbe, type: 3}
+--- !u!1 &9003693019767123576
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7128923769491077070}
+  m_Layer: 10
+  m_Name: Fire
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7128923769491077070
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9003693019767123576}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.798, y: -0.045, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7117743911423742621}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

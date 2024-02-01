@@ -18,8 +18,14 @@ EditorBuildSettings:
     path: Assets/Scenes/CardScene.unity
     guid: e84d229002ce91246a26be40f7d09e7f
   - enabled: 1
-    path: Assets/Scenes/GameScene.unity
+    path: Assets/Scenes/GameSceneS1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/GameSceneS2.unity
+    guid: e9e9b2fd90d6f584eafd38248b351d60
+  - enabled: 1
+    path: Assets/Scenes/GameSceneS3.unity
+    guid: a19dd5b8d9a68ef4db99e5b244d65a66
   - enabled: 1
     path: Assets/Scenes/1v1Scene.unity
     guid: 289b6d5f55e0ec446b34f6002d0e63d7

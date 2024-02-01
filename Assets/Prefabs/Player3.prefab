@@ -26,7 +26,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1664688706496442592
 Transform:
   m_ObjectHideFlags: 0
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2763117058182779027, guid: 5ee23d1e7fe68794498e199f045c8cb3,
+  m_Sprite: {fileID: -1167567877115118089, guid: aff4e1be940075946b370b6781acfdea,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -222,8 +222,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.09004617, y: -0.018009305}
-  m_Size: {x: 0.5249951, y: 1.1115814}
+  m_Offset: {x: -0.116105616, y: -0.022653222}
+  m_Size: {x: 0.4728762, y: 1.1208694}
   m_Direction: 0
 --- !u!82 &1599846962
 AudioSource:

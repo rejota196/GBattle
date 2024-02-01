@@ -1,0 +1,511 @@
+fileFormatVersion: 2
+guid: 06f5172abda43cf49971b7cc2c172176
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3522190507142691606
+    second: e2
+  - first:
+      213: 3525786634638087702
+    second: cordova_proyectil_1
+  - first:
+      213: 151561421814082455
+    second: e3
+  - first:
+      213: 4861309773891416764
+    second: e4
+  - first:
+      213: 40871575386832643
+    second: e5
+  - first:
+      213: -746527846525674707
+    second: e6
+  - first:
+      213: -5183947218080131304
+    second: cordova_proyectil_6
+  - first:
+      213: -6025792724002052725
+    second: e7
+  - first:
+      213: -2238778629352354486
+    second: cordova_proyectil_8
+  - first:
+      213: 4943297494082568327
+    second: cordova_proyectil_9
+  - first:
+      213: -5295697667087915971
+    second: cordova_proyectil_10
+  - first:
+      213: -5485925227623850836
+    second: cordova_proyectil_11
+  - first:
+      213: 6211649086162574964
+    second: cordova_proyectil_12
+  - first:
+      213: -3583053047545978873
+    second: cordova_proyectil_13
+  - first:
+      213: 2823322378272754951
+    second: cordova_proyectil_14
+  - first:
+      213: 102757965760380410
+    second: cordova_proyectil_15
+  - first:
+      213: 4404577707241944877
+    second: e1
+  - first:
+      213: 9077652963102665668
+    second: cordova_proyectil_17
+  - first:
+      213: -1599437856175133796
+    second: cordova_proyectil_18
+  - first:
+      213: 5290360136552453063
+    second: bala
+  - first:
+      213: -7344424245845281324
+    second: cordova_proyectil_20
+  - first:
+      213: 8144897533006123452
+    second: cordova_proyectil_21
+  - first:
+      213: -4999453403637270576
+    second: cordova_proyectil_22
+  - first:
+      213: 8424954488259696369
+    second: cordova_proyectil_23
+  - first:
+      213: -6405815846067934994
+    second: cordova_proyectil_24
+  - first:
+      213: 7296087909614969654
+    second: cordova_proyectil_25
+  - first:
+      213: -4905754791202605335
+    second: cordova_proyectil_26
+  - first:
+      213: -7777148821947234971
+    second: cordova_proyectil_27
+  - first:
+      213: -4519508824964531116
+    second: cordova_proyectil_28
+  - first:
+      213: 449617161462776551
+    second: cordova_proyectil_29
+  - first:
+      213: 2069495520415479963
+    second: cordova_proyectil_30
+  - first:
+      213: 1615628304863439320
+    second: cordova_proyectil_31
+  - first:
+      213: -7505026881292156812
+    second: cordova_proyectil_32
+  - first:
+      213: -4301635385768379578
+    second: cordova_proyectil_33
+  - first:
+      213: -6210271543081094035
+    second: cordova_proyectil_34
+  - first:
+      213: 1602864629048727201
+    second: cordova_proyectil_35
+  - first:
+      213: 7765320593430260058
+    second: cordova_proyectil_36
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: e2
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 10
+        width: 119
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4c186256aae1fc0800000000000000
+      internalID: -3522190507142691606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e3
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 14
+        width: 128
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79ba1e46f447a1200800000000000000
+      internalID: 151561421814082455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e4
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 2
+        width: 149
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2bee7ab77d67340800000000000000
+      internalID: 4861309773891416764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e5
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 0
+        width: 160
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30fb7543b74319000800000000000000
+      internalID: 40871575386832643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e6
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 14
+        width: 139
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b56ecf0ecc3a5f0800000000000000
+      internalID: -746527846525674707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cordova_proyectil_6
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 104
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81795fb887bee08b0800000000000000
+      internalID: -5183947218080131304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e7
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 12
+        width: 129
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8569bb8175106ca0800000000000000
+      internalID: -6025792724002052725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e1
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 28
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27b2c99614302d30800000000000000
+      internalID: 4404577707241944877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bala
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 35
+        width: 88
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c39811c3822b6940800000000000000
+      internalID: 5290360136552453063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cordova_proyectil_27
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 40
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 565cc7ef954021490800000000000000
+      internalID: -7777148821947234971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cordova_proyectil_29
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 30
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e288e91d6c5d3600800000000000000
+      internalID: 449617161462776551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cordova_proyectil_31
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 20
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9a370226ddb6610800000000000000
+      internalID: 1615628304863439320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cordova_proyectil_32
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 22
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470c2d690d9c8d790800000000000000
+      internalID: -7505026881292156812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

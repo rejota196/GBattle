@@ -25,6 +25,8 @@ public class EnemyController : MonoBehaviour
 
     private GameManager gm;
 
+    private float timeToFire;
+
     void Start()
     {
         gm = GameManager.Instance;
@@ -42,12 +44,12 @@ public class EnemyController : MonoBehaviour
                 moveSpeed = 2f;
                 break;
             case 2:
-                timeToAttack = 0.5f;
+                timeToAttack = 2f;
                 jumpCooldown = 1.5f;
                 moveSpeed = 2.5f;
                 break;
             case 3:
-                timeToAttack = 0.3f;
+                timeToAttack = 1f;
                 jumpCooldown = 1;
                 moveSpeed = 3f;
                 break;
@@ -62,20 +64,49 @@ public class EnemyController : MonoBehaviour
         if (gm.GetCurrentState() == GameManager.GameState.Playing){
             if(!health.GetIsDead()){
                 posH = new Vector2(player.position.x, transform.position.y);
-                if (Vector2.Distance(posH, transform.position) > 1)
-                {
-                    MoveTowardsPlayer();
-
-                    if (Time.time >= jumpCooldown && IsGrounded())
+                switch(gm.GetLevelNumber()){
+                    case 1:
+                    if (Vector2.Distance(posH, transform.position) > 1)
                     {
-                        audio.Jump();
-                        Jump();
+                        MoveTowardsPlayer();
+
+                        if (Time.time >= jumpCooldown && IsGrounded())
+                        {
+                            audio.Jump();
+                            Jump();
+                        }
                     }
-                }
-                else
-                {
-                    anim.SetFloat("speed", 0);
-                    enemyCombat.Attack(timeToAttack);
+                    else
+                    {
+                        anim.SetFloat("speed", 0);
+                        enemyCombat.Attack(timeToAttack);
+                    }
+                    break;
+                    case 2:
+                    if(timeToFire<timeToAttack){
+                        timeToFire+=Time.deltaTime;
+                        MoveTowardsPlayer();
+                        if (Time.time >= jumpCooldown && IsGrounded())
+                        {
+                            audio.Jump();
+                            Jump();
+                        }
+                    }
+                    else{
+                        timeToFire = 0;
+                        enemyCombat.Attack(0);
+                    }
+                    break;
+                    case 3:
+                    if(timeToFire<timeToAttack){
+                        timeToFire+=Time.deltaTime;
+                    }
+                    else{
+                        timeToFire = 0;
+                        enemyCombat.Attack(0);
+                    }
+                    break;
+                    
                 }
             }
         }
