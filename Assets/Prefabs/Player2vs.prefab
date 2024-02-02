@@ -111,13 +111,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2763117058182779027, guid: 5ee23d1e7fe68794498e199f045c8cb3,
+  m_Sprite: {fileID: -1167567877115118089, guid: aff4e1be940075946b370b6781acfdea,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.1681818, y: 1.1681818}
+  m_Size: {x: 1.0363636, y: 1.1090909}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -365,9 +365,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f662eb80d4c16e84f99e413d2f0e961b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  character: 2
   damageAmount: 5
   knockbackForce: 5
   enemyLayer:
     serializedVersion: 2
     m_Bits: 0
   attack: 0
+  bulletGO: {fileID: 0}

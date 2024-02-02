@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CombatController : MonoBehaviour
 {
+    public int character;
     public float damageAmount = 5f;
     public float knockbackForce = 5f;
     public LayerMask enemyLayer;
@@ -16,6 +17,7 @@ public class CombatController : MonoBehaviour
     private GameManager gm;
 
     public KeyCode attack;
+    public GameObject bulletGO;
     void Start(){
         gm = GameManager.Instance;
         power = GetComponent<PowerController>();
@@ -30,12 +32,15 @@ public class CombatController : MonoBehaviour
             {
                 audio.Attack();
                 power.UsePower1();
-                Attack();
+                if(character<3)
+                    Attack1();
+                else
+                    Attack2();
             }
         }
     }
 
-    private void Attack()
+    private void Attack1()
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 1f, enemyLayer);
 
@@ -57,6 +62,11 @@ public class CombatController : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void Attack2(){
+        GameObject bullet = Instantiate(bulletGO, transform.Find("Fire").position, Quaternion.identity);
+        bullet.GetComponent<Bullet>().SetDirection(transform.TransformDirection(Vector3.right));
     }
 
     public void SetEnemyLayer(LayerMask enemyLayer){

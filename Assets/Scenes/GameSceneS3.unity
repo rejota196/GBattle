@@ -4161,8 +4161,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1003938765}
-  - component: {fileID: 1003938764}
   - component: {fileID: 1003938766}
+  - component: {fileID: 1003938764}
   m_Layer: 0
   m_Name: DB
   m_TagString: Untagged
@@ -4391,7 +4391,7 @@ MonoBehaviour:
   trivia: {fileID: 595627564}
   responsePanel: {fileID: 1571611667}
   achievementPanel: {fileID: 136266133}
-  question: {fileID: 1003938764}
+  question: {fileID: 0}
   triviaQuestion: {fileID: 1339084493}
   triviaOption1: {fileID: 2073411107}
   triviaOption2: {fileID: 1638801450}
@@ -9664,7 +9664,7 @@ PrefabInstance:
     - target: {fileID: 8541977675320533341, guid: 4d5d58250933ba14a8d254b29fc50553,
         type: 3}
       propertyPath: damageAmount
-      value: 50
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8541977675320533341, guid: 4d5d58250933ba14a8d254b29fc50553,
         type: 3}

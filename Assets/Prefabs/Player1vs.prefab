@@ -81,13 +81,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4040410329623888875, guid: b7d37a8d9aa5c4b4d91ed27e3c15ce57,
+  m_Sprite: {fileID: 6340754518721847244, guid: 206df74b37c11b443b2771d28229ce60,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.03, y: 1.74}
+  m_Size: {x: 0.728, y: 1.304}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -192,12 +192,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f662eb80d4c16e84f99e413d2f0e961b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  character: 1
   damageAmount: 5
   knockbackForce: 5
   enemyLayer:
     serializedVersion: 2
     m_Bits: 1024
   attack: 0
+  bulletGO: {fileID: 0}
 --- !u!114 &8541977675320533338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,7 +367,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8541977675398218338}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.009, y: -0.578, z: 0}
+  m_LocalPosition: {x: 0.123, y: -0.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8541977675320533332}

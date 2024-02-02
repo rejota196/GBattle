@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEditor;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -132,15 +131,18 @@ public class RoundController : MonoBehaviour
 
     IEnumerator LoadRound(){
         switch(gm.stage){
+            case 0:
+                LoadRoundStage1();
+                break;
             case 1:
                 LoadRoundStage1();
-            break;
+                break;
             case 2:
                 LoadRoundStage2();
-            break;
+                break;
             case 3:
                 LoadRoundStage3();
-            break;
+                break;
         }       
         
         yield return new WaitForSeconds(3);
@@ -237,6 +239,10 @@ public class RoundController : MonoBehaviour
     
     private void LifeControl(){
         switch(gm.stage){
+            case 0:
+                if (player1H.GetCurrentHealth() == 0 || player2H1.GetCurrentHealth() == 0)
+                    theresAWinner = true;
+                break;
             case 1:
                 if (player1H.GetCurrentHealth() == 0 || player2H1.GetCurrentHealth() == 0)
                     theresAWinner = true;
